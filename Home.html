@@ -1,0 +1,111 @@
+<!--! then enter for boilerplate-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="John Default">
+    <meta http-equiv="refresh" content="30"> <!--Will need to remove this later-->
+    <link rel="shortcut icon" type="image/x-icon" href="Doggo.jpg">
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+    <title>HTML Demo</title>
+</head>
+<body>
+    <h1 class="header"> <!--Indentation important for readability & maintenance-->
+        This is a large header
+    </h1>
+<br>
+    <h3 class="header" id="tester">
+        This is a medium header
+    </h3>
+<br>
+    <h5 id="tester">
+        This is a small header
+    </h5>
+<br>
+    <p>
+        This is a paragraph of text
+        It doesn't matter if I start a new line
+        in my IDE, it only matters
+        <br>
+        if I put in a line break
+    </p>
+<br>
+    <p>
+        You can format text to be <b>bold</b>, <i>italic</i>, <u>underlined</u>, <del>crossed out</del>, among other things
+    </p>
+<div class="grid-example2">
+<br>
+    <!--Image from local directory-->
+    <img src="Doggo.jpg" alt="One disgruntled pupper" style="width:300px;height:400px;">
+<br>
+    <!--Image from the internet-->
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/005/857/332/small_2x/funny-portrait-of-cute-corgi-dog-outdoors-free-photo.jpg" alt="Happy pupper" style="width:300px">
+<br>
+    <!--Image from subfolder-->
+    <img src="Images/Pupper.png" alt="Bonus pupper" style="width: 300px;">
+        <figcaption>Doggo'clock</figcaption>
+</div>
+
+<br>
+
+<a href="destination.html">This is a link to nowhere</a>
+
+<br>
+
+<!--Lists-->
+<h1>Ordered list</h1>
+    <ol>
+        <li>Option1</li>
+        <li>Option2</li>
+        <li>Option3</li>
+    </ol>
+    <br>
+    <h1>Unordered list</h1>
+    <ul>
+        <li>Option</li>
+        <li>Options</li>
+        <li>No more options</li>
+    </ul>
+<br>
+
+ <!--Selector box-->
+ <select>
+    <option>Yes</option>
+    <option>No</option>
+    <option>Maybe?</option>
+</select>
+<br>
+    <!--Button: useful later-->
+    <button onclick="thankYou()">Click me!</button>
+    <button onclick="helloWorld()">Hello World!</button>
+    <button onclick="accessDenied()">Secret page here!</button>
+<br>
+
+<form action="grid.html" method="get">
+    <label for="email">Email:</label>
+    <input type="email" id="email"/> <!--Tag is self closing-->
+    <label for="password">Password:</label>
+    <input type="password" id="password"/>
+    <input type="submit" id="submit" value="Sign-In"/>
+</form>
+
+
+
+<ul id="navbar">
+    <li><a href="default.asp">Home</a></li>
+    <li><a href="news.asp">News</a></li>
+    <li><a href="contact.asp">Contact</a></li>
+    <li><a href="about.asp">About</a></li>
+</ul>
+
+<div class="flex-container">
+    <div class="flex_item">Thing1</div>
+    <div class="flex_item">Thing2</div>
+    <div class="flex_item">Thing3</div>
+</div>
+
+
+</body>
+</html>

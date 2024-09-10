@@ -1,0 +1,164 @@
+/* This is a comment */
+
+/*Page wide settings. Lower priority for*/
+*{
+    background:red;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+p{
+    color: #000000;
+    background: rgb(232, 121, 57);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img{
+    height:600px;
+    width: 600px;
+}
+
+.header{
+    text-decoration:underline;
+    color: green;
+    margin-top: 5px;
+}
+
+#tester{
+    color: rgb(0, 47, 255);
+    background: white;
+    border: 5px, 10px, 5px, 10px solid blue;
+    margin: 5px, 10px, 5px, 10px;
+    padding: 20px;
+}
+
+#hidden{
+    display: none;
+}
+
+#navbar a{
+    width: 60px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+
+  /*Changes styling on hover*/
+#navbar a:hover{
+    color:green;
+    background-color: white;
+
+}
+
+  /*Takes up full width available, and starts on new line */
+.block-element{
+    display: block;
+}
+
+/*Takes up only as much width as necessary, and doesn't start on new line */
+.inline-element{
+    display: inline;
+}
+
+/*Like inline, but can set height and width */
+.inline-block-element{
+    display:inline-block;
+}
+
+/*not visible and takes up no space on page */
+.hidden-element{
+    display:none;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.flex-contain3r{ /* Why is this a bad class name? */
+    display: flex;
+    justify-content: flex-end; /* Aligns items horizontally */
+    align-items:flex-start;
+    flex-wrap: wrap; /* Allows content to wrap */
+}
+
+.flex-item{
+    background-color:blueviolet;
+    color: white;
+    margin: 5px;
+    padding:10px;
+}
+
+.endIten{
+    order:15;
+    align-self: center;
+}
+
+/* Day 4 */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* First column takes up one segment, second column takes up two */
+    grid-template-rows: auto;
+}
+
+.grid-example2{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px; /* adds space between grid items*/
+}
+
+.grid-example3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*2 columns, equal space */
+    grid-gap: 10px;
+}
+
+.grid-example5{
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.grid-item{
+    background-color: burlywood;
+    text-align: center;
+    /* grid-column: 1; */
+}
+/* Grid Task */
+.grid-example4{
+    display:grid;
+    grid-template-columns: repeat(3, 600px);
+    grid-template-rows: repeat(7, 200px);
+}
+
+.grid-image{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#grid-test{
+    grid-column: 2 / span 2;
+}
+
+#grid-test2{
+    grid-area:1/3/2/6; /*Defining area of element*/
+    order: 2; /* Specifying order of element. Value can be negative */
+}
+
+/* Responsive design*/
+@media (max-width:600px){ /*When width is 600 pixels or less, changes to column layout */
+    .container{
+        flex-direction: column;
+    }
+}
+
+/* Grid Garden & Flexbox Froggy are useful tools to help learn*/
+
+/* FLEXBOX FROGGY FINAL QUESTION
+
+flex-direction: column-reverse;
+flex-wrap: wrap-reverse;
+align-content: space-between;
+justify-content: center;
+
+*/ 
